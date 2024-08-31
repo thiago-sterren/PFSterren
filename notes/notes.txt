@@ -1,0 +1,30 @@
+acá les paso sitios para hacer wireframe, no requieren instalación:
+https://wireframe.cc/
+https://whimsical.com/
+https://www.figma.com/
+https://wireframe.cc/
+https://moqups.com/es/
+https://www.adobe.com/la/products/xd/pricing/free-trial.html
+https://www.sketch.com/ (Opcion solo para MAC)
+https://miro.com/aq/ps/templates/wireframe/
+https://marvelapp.com/
+https://uizard.io/wireframing/
+https://app.moqups.com
+
+shortcuts:
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+https://developer.mozilla.org/es/docs/Web/HTML
+https://www.w3schools.com/html/#gsc.tab=0
+
+Lista de extensions en caso que alguien no tomo nota:
+Css peak
+Error lens
+Codesnap
+Prettier
+Image
+Auto rename tag
+Auto close tag
+Image preview
+Live server
+material icon theme
