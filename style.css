@@ -80,11 +80,17 @@ ul, li {
 
 /*main*/
 #main {
-    max-width: 80%;
+    max-width: 100%;
     /*margin (para establecer los margenes de cada direccion): arriba - derecha - abajo - izquierda */
     /*margin mas simplificado: arriba y abajo - derecha e izquierda*/
-    margin: 120px auto auto auto;
+    margin: 120px 0 auto 0;
     min-height: 100vh; /*vh = viewport height. se encarga de que el main ocupe toda la pantalla visible, a menos que se interpongan header o footer. esto hace, por ejemplo, que el footer quede siempre pegado al final de la pagina, y que no suba ante una posible falta/escasez de contenido en el main, dejando un espacio blanco por debajo del mismo*/
+}
+
+#mainIndex {
+    max-width: 100%;
+    margin: 0 0 auto 0;
+    min-height: 100vh;
 }
 
 .titulo {
@@ -94,11 +100,12 @@ ul, li {
 }
 
 .section_presentacion {
-    text-align: center;
+    padding: 0 100px;
 }
 
 .img_presentacion {
-    padding: 5px;
+    width: 100%;
+    height: auto;
 }
 
 .p_presentacion {
@@ -111,16 +118,21 @@ ul, li {
 
 h2 {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .p_recomendacion {
     font-size: 15px;
-    text-align: left;
+    text-align: center;
 }
 
 .section_recomendacion {
-    padding: 20px 0;
+    padding: 20px 100px;
+}
+
+.a_recomendacion {
+    display: flex;
+    justify-content: center
 }
 
 img {
@@ -252,6 +264,18 @@ img {
 
 #formConsultas ul li {
     padding: 8px;
+}
+
+.btn_enviar_form a, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+/* MATE */
+
+.row {
+    padding: 20px 0;
 }
 
 @media screen and (max-width: 800px) {
