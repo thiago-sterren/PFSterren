@@ -56,24 +56,22 @@
     </header>
     <main id="main">
         <h1 class="titulo">Consultas</h1>
-        <form id="formConsultas">
+        <form id="formConsultas" action="https://formspree.io/f/xgvwqzyy" method="POST">
             <ul>
                 <li>
-                    <input type="text" value="" placeholder="Nombre">
+                    <input type="text" name="nombre" placeholder="Nombre">
                 </li>
                 <li>
-                    <input type="email" value="" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email">
                 </li>
                 <li>
-                    <input type="text" value="" placeholder="Teléfono">
+                    <input type="text" name="telefono" placeholder="Teléfono">
                 </li>
                 <li>
-                    <textarea name="" id="" placeholder="Mensaje"></textarea>
+                    <textarea name="mensaje" placeholder="Mensaje"></textarea>
                 </li>
                 <li>
-                    <button class="btn_enviar_form">
-                        <a href="../pages/Consultas.html">Consultas</a>
-                    </button>
+                    <button class="btn_enviar_form" type="submit">Enviar</button>
                 </li>
             </ul>
         </form>
