@@ -17,7 +17,7 @@
 <body id="body">
     <header id="header">
         <nav class="navBar_almacen_criollo navbar navbar-expand-lg sticky-top navbar-dark aria-current">
-            <a class="navbar-brand logo_navbar" href="#">
+            <a class="navbar-brand logo_navbar" href="../index.html">
                 <img class="ac_header_logo" src="../images/almacen_criollo_logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,6 +58,7 @@
         <h1 class="titulo">Whiskey</h1>
         <div class="container text-center">
             <div class="row">
+                <!-- card 1 -->
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
@@ -65,11 +66,30 @@
                             <img src="../images/whiskeys/jw_blue_label.png" alt="Imagen producto">
                             <p class="card-text">750ml $150000</p>
                             <div>
-                                <a href="#" class="btn btn-primary">Ver</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJWBlueLabel">Ver</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- modal de card 1 -->
+                <div class="modal fade" id="modalJWBlueLabel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Johnnie Walker Blue Label</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/whiskeys/jw_blue_label.png" alt="Imagen producto">
+                                <p>Detalle sobre el producto, descripción, precio, etc.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
@@ -77,11 +97,30 @@
                             <img src="../images/whiskeys/jameson-irish.webp" alt="Imagen producto">
                             <p class="card-text">700ml $70000</p>
                             <div>
-                                <a href="#" class="btn btn-primary">Ver</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJamesonIrish">Ver</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- modal de card 2 -->
+                <div class="modal fade" id="modalJamesonIrish" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Jameson Irish</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/whiskeys/jameson-irish.webp" alt="Imagen producto">
+                                <p>Detalle sobre el producto, descripción, precio, etc.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
@@ -89,7 +128,25 @@
                             <img src="../images/whiskeys/jack_daniels.webp" alt="Imagen producto">
                             <p class="card-text">750ml $80000</p>
                             <div>
-                                <a href="#" class="btn btn-primary">Ver</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJackDaniels">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal de card 3 -->
+                <div class="modal fade" id="modalJackDaniels" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Jack Daniels</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/whiskeys/jack_daniels.webp" alt="Imagen producto">
+                                <p>Detalle sobre el producto, descripción, precio, etc.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
@@ -114,5 +171,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
