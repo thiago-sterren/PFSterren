@@ -69,6 +69,10 @@ ul, li {
   padding: 0px 10px;
 }
 
+#navbarTogglerDemo02 ul {
+  padding-bottom: 30px;
+}
+
 #main {
   max-width: 100%;
   /*margin (para establecer los margenes de cada direccion): arriba - derecha - abajo - izquierda */
