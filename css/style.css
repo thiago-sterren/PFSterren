@@ -147,10 +147,6 @@ img {
   padding: 20px;
 }
 
-.card-title {
-  font-size: 10px;
-}
-
 #footer {
   display: flex;
   justify-content: space-between;
