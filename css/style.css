@@ -147,6 +147,10 @@ img {
   padding: 20px;
 }
 
+h5 {
+  font-size: 18px;
+}
+
 #footer {
   display: flex;
   justify-content: space-between;
