@@ -1,0 +1,9 @@
+@media screen and (max-width: 800px) {
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer div, nav {
+        margin-top: 50px;
+    }
+}

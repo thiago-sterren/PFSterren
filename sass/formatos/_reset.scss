@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+.footer_redes a, a:hover, a:active {
+    color: black;
+}
+
+#body {
+    max-width: 1920px;
+    height: 100vh;
+}
