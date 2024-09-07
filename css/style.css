@@ -139,6 +139,14 @@ img {
   padding: 50px;
 }
 
+.row {
+  padding: 20px 0;
+}
+
+.almacen_criollo_card {
+  padding: 20px;
+}
+
 #footer {
   display: flex;
   justify-content: space-between;
@@ -185,10 +193,6 @@ img {
   text-decoration: none;
   color: black;
   padding: 5px;
-}
-
-.row {
-  padding: 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
