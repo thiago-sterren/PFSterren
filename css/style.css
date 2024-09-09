@@ -26,12 +26,12 @@ ul, li {
   height: 100vh;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 991.5px) {
   #footer {
     flex-direction: column;
     text-align: center;
   }
-  #footer div, nav {
+  #footer div {
     margin-top: 50px;
   }
 }
@@ -84,7 +84,7 @@ ul, li {
   max-width: 100%;
   /*margin (para establecer los margenes de cada direccion): arriba - derecha - abajo - izquierda */
   /*margin mas simplificado: arriba y abajo - derecha e izquierda*/
-  margin: 120px 0 auto 0;
+  margin: 150px 0 auto 0;
   min-height: 100vh; /*vh = viewport height. se encarga de que el main ocupe toda la pantalla visible, a menos que se interpongan header o footer. esto hace, por ejemplo, que el footer quede siempre pegado al final de la pagina, y que no suba ante una posible falta/escasez de contenido en el main, dejando un espacio blanco por debajo del mismo*/
 }
 
