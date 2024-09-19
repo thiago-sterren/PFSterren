@@ -1,0 +1,55 @@
+// recomendaciones index
+#section_recomendacion {
+    .recomendaciones {
+        .caja {
+            transition: .5s;
+            img {
+                transition: .5s;
+            }
+        }
+        .caja:hover {
+            transition: .5s;
+            img {
+                transition: .5s;
+            }
+        }
+    }
+}
+// main productos
+.btn-primary, .btn-success, .btn-warning, .btn-secondary {
+    transition: .5s;
+}
+.btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-secondary:hover {
+    transition: .5s;
+    transform: scale(1.2, 1.2);
+}
+.btn-danger {
+    transition: 1s;
+}
+.btn-danger:hover {
+    transition: 1s;
+    transform: rotate(360deg);
+}
+// footer
+.footer_redes_ul {
+    li{
+        a {
+            transition: 1.5;
+        }
+    }
+}
+.footer_redes_ul {
+    li {
+        a {
+            transition: 1.5;
+            transform: translate(10px, 10px);
+        }
+    }
+}
+.footer_redes a {
+    transition: text-shadow 1s;
+}
+.footer_redes a:hover {
+    text-shadow: 0 0 15px currentColor;
+    transition: text-shadow .2s;
+}

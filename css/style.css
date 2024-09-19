@@ -68,16 +68,15 @@ ul, li {
   height: 80px;
 }
 
-.input-group {
-  padding-left: 20px;
-}
-
 .nav-item {
   padding: 0px 10px;
 }
 
-#navbarTogglerDemo02 ul {
-  padding-bottom: 30px;
+#navbarTogglerDemo02 {
+  justify-content: center;
+}
+#navbarTogglerDemo02 ul .nav-link {
+  font-size: 25px;
 }
 
 #main {
@@ -88,33 +87,10 @@ ul, li {
   min-height: 100vh; /*vh = viewport height. se encarga de que el main ocupe toda la pantalla visible, a menos que se interpongan header o footer. esto hace, por ejemplo, que el footer quede siempre pegado al final de la pagina, y que no suba ante una posible falta/escasez de contenido en el main, dejando un espacio blanco por debajo del mismo*/
 }
 
-#mainIndex {
-  max-width: 100%;
-  margin: 110px 0 auto 0;
-  min-height: 100vh;
-}
-
 .titulo {
   display: flex;
   justify-content: center;
   margin: 30px;
-}
-
-.section_presentacion {
-  padding: 0 100px;
-}
-
-.img_presentacion {
-  width: 100%;
-  height: auto;
-}
-
-.p_presentacion {
-  text-align: left;
-}
-
-.negrita {
-  font-weight: bold;
 }
 
 h2 {
@@ -122,40 +98,13 @@ h2 {
   text-align: center;
 }
 
-.p_recomendacion {
-  font-size: 15px;
-  text-align: center;
-}
-
-.section_recomendacion {
-  padding: 20px 100px;
-}
-
-.a_recomendacion {
-  display: flex;
-  justify-content: center;
-}
-
 img {
   width: 100px;
   height: 100px;
 }
 
-.aside_publicidad p {
-  font-size: 10px;
-  text-align: center;
-}
-
-.aside_publicidad {
-  padding: 50px;
-}
-
 .row {
   padding: 20px 0;
-}
-
-.almacen_criollo_card {
-  padding: 20px;
 }
 
 #footer {
@@ -172,16 +121,15 @@ img {
 }
 
 .footer_redes_ul li {
-  padding: 0 5px;
+  padding: 0 10px;
+}
+
+.fa-brands {
+  font-size: 30px;
 }
 
 .footer_redes a {
   text-decoration: none;
-  transition: text-shadow 1s;
-}
-
-.footer_redes a:hover {
-  text-shadow: 0 0 10px currentColor;
 }
 
 /*.footer_redes_ul {
@@ -189,6 +137,118 @@ img {
     flex-direction: column;
     ejemplo que hace que los elementos de un ul se acomoden de forma vertical
 }*/
+#section_recomendacion .recomendaciones .caja {
+  transition: 0.5s;
+}
+#section_recomendacion .recomendaciones .caja img {
+  transition: 0.5s;
+}
+#section_recomendacion .recomendaciones .caja:hover {
+  transition: 0.5s;
+}
+#section_recomendacion .recomendaciones .caja:hover img {
+  transition: 0.5s;
+}
+
+.btn-primary, .btn-success, .btn-warning, .btn-secondary {
+  transition: 0.5s;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-secondary:hover {
+  transition: 0.5s;
+  transform: scale(1.2, 1.2);
+}
+
+.btn-danger {
+  transition: 1s;
+}
+
+.btn-danger:hover {
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+.footer_redes_ul li a {
+  transition: 1.5;
+}
+
+.footer_redes_ul li a {
+  transition: 1.5;
+  transform: translate(10px, 10px);
+}
+
+.footer_redes a {
+  transition: text-shadow 1s;
+}
+
+.footer_redes a:hover {
+  text-shadow: 0 0 15px currentColor;
+  transition: text-shadow 0.2s;
+}
+
+#mainIndex {
+  max-width: 100%;
+  margin: 110px 0 auto 0;
+  min-height: 100vh;
+}
+
+#section_presentacion {
+  padding: 0 100px;
+}
+
+.img_presentacion {
+  width: 100%;
+  height: auto;
+}
+
+.p_presentacion {
+  text-align: left;
+}
+
+.p_recomendacion {
+  font-size: 15px;
+  text-align: center;
+}
+
+#section_recomendacion {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px 100px 50px;
+}
+#section_recomendacion .recomendaciones {
+  display: flex;
+  gap: 20px;
+}
+#section_recomendacion .recomendaciones .caja {
+  height: 120px;
+  width: 120px;
+}
+#section_recomendacion .recomendaciones .caja img {
+  height: 120px;
+  width: 120px;
+}
+#section_recomendacion .recomendaciones .caja:hover {
+  width: 200px;
+  height: 200px;
+}
+#section_recomendacion .recomendaciones .caja:hover img {
+  height: 200px;
+  width: 200px;
+}
+
+.aside_publicidad p {
+  font-size: 10px;
+  text-align: center;
+}
+
+.aside_publicidad {
+  padding: 50px;
+}
+
 #formConsultas ul {
   display: flex;
   flex-direction: column;
@@ -198,12 +258,6 @@ img {
 
 #formConsultas ul li {
   padding: 8px;
-}
-
-.btn_enviar_form a, a:hover, a:active {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

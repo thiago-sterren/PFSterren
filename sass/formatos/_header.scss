@@ -31,16 +31,20 @@
     height: 80px;
 }
 
-.input-group {
-    padding-left: 20px;
-}
+// .input-group {
+//     padding-left: 20px;
+//     padding-top: 20px;
+// }
 
 .nav-item {
     padding: 0px 10px;
 }
 
-#navbarTogglerDemo02  {
+#navbarTogglerDemo02 {
+    justify-content: center;
     ul {
-        padding-bottom: 30px;
+        .nav-link {
+            font-size: 25px;
+        }
     }
 }

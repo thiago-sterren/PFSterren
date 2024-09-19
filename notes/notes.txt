@@ -28,3 +28,29 @@ Auto close tag
 Image preview
 Live server
 material icon theme
+
+webs para hacer las animaciones
+https://animista.net/
+https://animate.style/
+
+Páginas para realizar gradientes:
+https://www.css-gradient.com
+https://mycolor.space/gradient
+https://cssgradient.io/
+Ejemplos de transformaciones:
+https://codepen.io/Eniun/pen/mddmVWX
+https://xprimiendo.com/transformaciones-y-transiciones-en-css3/
+https://animista.net/play/basic/rotate
+Página donde hay ejemplos de sombras:
+https://getcssscan.com/css-box-shadow-examples
+Páginas para las animaciones:
+AOS:
+https://wowjs.uk/
+https://michalsnik.github.io/aos/
+WOW + animate:
+https://wowjs.uk/docs.html
+https://animate.style/
+
+!!
+imagehover.io
+https://cdnjs.com/libraries/imagehover.css/2.0.0

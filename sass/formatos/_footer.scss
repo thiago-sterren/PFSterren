@@ -6,22 +6,25 @@
     padding: 30px; /*ayudado del 100vh puesto en el min-height del main, poniendole un padding suficiente, el footer no se movera del final de la pagina*/
 }
 
-.footer_logo_div img {
-    width: 150px;
-    height: 150px;
+.footer_logo_div {
+    img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
-.footer_redes_ul li {
-    padding: 0 5px;
+.footer_redes_ul {
+    li {
+        padding: 0 10px;
+    }
+}
+
+.fa-brands {
+    font-size: 30px;
 }
 
 .footer_redes a {
     text-decoration: none;
-    transition: text-shadow 1s;
-}
-
-.footer_redes a:hover {
-    text-shadow: 0 0 10px currentColor;
 }
 
 /*.footer_redes_ul {

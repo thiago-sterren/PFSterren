@@ -59,26 +59,33 @@
                         </div>
                     </li> -->
                 </ul>
-                <form class="input-group my-0 my-lg-0">
+                <!-- <form class="input-group my-0 my-lg-0">
                     <input class="navbar_buscador_input form-control mr-sm-2" type="search" placeholder="Buscar">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
+                </form> -->
             </div>
         </nav>
     </header>
     <main id="mainIndex"> <!-- ESTRUCTURA 2 = MAIN (CONTENIDO/CAJAS) -->
         <img class="img_presentacion" src="./images/IMG_1250.jpg" alt="Imagen de presentación del local"> <br><br>
-        <section class="section_presentacion">
+        <section id="section_presentacion">
             <h1 class="titulo">Almacén Criollo</h1>
             <p class="p_presentacion">Bienvenido a la página web de Almacén Criollo, el lugar perfecto para dar y darte los mejores gustos. En éste sitio podrás navegar todo nuestro catálogo, con su variedad de categorías y productos, los cuales podrás encontrar en nuestro local en J. B. Justo 361, Sunchales, Santa Fe.</p>
         </section>
-        <section class="section_recomendacion">
-            <h2>Recomendación del día</h2>
-            <p class="p_recomendacion">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio nulla veniam, illum, vel nam eaque odit 
-                    praesentium alias sed voluptatem, consectetur assumenda incidunt voluptas nesciunt unde fuga dolorum odio!
-            </p>
-            <!-- <a class="a_recomendacion" href="./pages/JWBlueLabel.html">-Link al producto recomendado-</a> -->
+        <section id="section_recomendacion">
+            <h2>Recomendaciones</h2>
+            <p class="p_recomendacion"></p>
+            <section class="recomendaciones box">
+                <article class="caja1 caja" type="button" onclick="window.location.href='./pages/Whiskey.html'">
+                    <img src="./images/whiskeys/bluelabel.jpg" alt="Recomendacion 1">
+                </article>
+                <article class="caja2 caja" type="button" onclick="window.location.href='./pages/Gin.html'">
+                    <img src="./images/gins/BombayBramble.jpeg" alt="Recomendacion 2">
+                </article>
+                <article class="caja3 caja" type="button" onclick="window.location.href='./pages/Chocolateria.html'">
+                    <img src="./images/chocolateria/havanna70.jpg" alt="Recomendacion 3">
+                </article>
+            </section>
         </section>
         <aside class="aside_publicidad">
             <img src="" alt="Foto publicidad">
