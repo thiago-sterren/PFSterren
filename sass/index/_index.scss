@@ -45,7 +45,32 @@
             }
         }
     }
+    // display: flex;
 }
+// QUIERO hacer que la animacion de las recomendaciones se quite cuando la pantalla este por debajo de los px del breakpoint, ocultando
+// el animado y mostrando este nuevo sin animaciones
+// #section_recomendacion_no_animacion {
+//     width: 100%;
+//     display: flex;
+//     gap: 20px;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     padding: 0 50px 100px 50px;
+//     .recomendaciones {
+//         display: flex;
+//         gap: 20px;
+//         .caja {
+//             height: 120px;
+//             width: 120px;
+//             img {
+//                 height: 120px;
+//                 width: 120px;
+//             }
+//         }
+//     }
+//     display: none;
+// }
 .aside_publicidad p {
     font-size: 10px;
     text-align: center;

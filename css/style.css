@@ -28,10 +28,11 @@ ul, li {
 
 @media screen and (max-width: 991.5px) {
   #footer {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
-  #footer div {
+  #footer .footer_logo_div, #footer .footer_copyright, #footer .div_redes {
     margin-top: 50px;
   }
   .row .almacen_criollo_card {
@@ -128,7 +129,7 @@ img {
   height: 150px;
 }
 
-.footer_redes_ul li {
+.div_redes a {
   padding: 0 10px;
 }
 
@@ -140,11 +141,6 @@ img {
   text-decoration: none;
 }
 
-/*.footer_redes_ul {
-    display: flex;
-    flex-direction: column;
-    ejemplo que hace que los elementos de un ul se acomoden de forma vertical
-}*/
 #section_recomendacion .recomendaciones .caja {
   transition: 0.5s;
 }

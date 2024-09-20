@@ -13,8 +13,8 @@
     }
 }
 
-.footer_redes_ul {
-    li {
+.div_redes {
+    a {
         padding: 0 10px;
     }
 }
@@ -26,9 +26,3 @@
 .footer_redes a {
     text-decoration: none;
 }
-
-/*.footer_redes_ul {
-    display: flex;
-    flex-direction: column;
-    ejemplo que hace que los elementos de un ul se acomoden de forma vertical
-}*/

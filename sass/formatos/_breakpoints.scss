@@ -1,8 +1,9 @@
 @media screen and (max-width: 991.5px) {
     #footer {
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        div {
+        align-items: center;
+        .footer_logo_div, .footer_copyright, .div_redes {
             margin-top: 50px;
         }
     }
@@ -11,4 +12,10 @@
             padding: 20px 0;
         }
     }
+    // #section_recomendacion_no_animacion {
+    //     display: flex;
+    // }
+    // #section_recomendacion {
+    //     display: none;
+    // }
 }
