@@ -34,6 +34,9 @@ ul, li {
   #footer div {
     margin-top: 50px;
   }
+  .row .almacen_criollo_card {
+    padding: 20px 0;
+  }
 }
 #header {
   width: 100%;
@@ -104,7 +107,12 @@ img {
 }
 
 .row {
-  padding: 12px 0;
+  padding-top: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.almacen_criollo_card {
+  padding: 20px;
 }
 
 #footer {
