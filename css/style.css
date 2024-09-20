@@ -168,19 +168,34 @@ img {
   transform: rotate(360deg);
 }
 
-.footer_redes_ul li a {
-  transition: 1.5;
+.almacen_criollo_card {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.footer_redes_ul li a {
-  transition: 1.5;
-  transform: translate(10px, 10px);
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
-
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 .footer_redes a {
   transition: text-shadow 1s;
 }
-
 .footer_redes a:hover {
   text-shadow: 0 0 15px currentColor;
   transition: text-shadow 0.2s;
@@ -247,6 +262,16 @@ img {
 
 .aside_publicidad {
   padding: 50px;
+}
+
+.almacen_criollo_card img {
+  width: 100%;
+  height: 100%;
+}
+.almacen_criollo_card figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #formConsultas ul {

@@ -30,26 +30,37 @@
     transition: 1s;
     transform: rotate(360deg);
 }
+.almacen_criollo_card {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
 // footer
-.footer_redes_ul {
-    li{
-        a {
-            transition: 1.5;
-        }
+.footer_redes {
+    a {
+        transition: text-shadow 1s;
     }
-}
-.footer_redes_ul {
-    li {
-        a {
-            transition: 1.5;
-            transform: translate(10px, 10px);
-        }
+    a:hover {
+        text-shadow: 0 0 15px currentColor;
+        transition: text-shadow .2s;
     }
-}
-.footer_redes a {
-    transition: text-shadow 1s;
-}
-.footer_redes a:hover {
-    text-shadow: 0 0 15px currentColor;
-    transition: text-shadow .2s;
-}
+} 
