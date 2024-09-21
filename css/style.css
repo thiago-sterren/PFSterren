@@ -141,6 +141,10 @@ img {
   text-decoration: none;
 }
 
+.footer_copyright p {
+  text-align: center;
+}
+
 #section_recomendacion .recomendaciones .caja {
   transition: 0.5s;
 }
