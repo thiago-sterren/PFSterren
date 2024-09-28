@@ -17,13 +17,15 @@ ul, li {
   display: inline-block;
 }
 
-.footer_redes a, a:hover, a:active {
-  color: black;
-}
-
 #body {
   max-width: 1920px;
   height: 100vh;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 991.5px) {
@@ -62,7 +64,6 @@ ul, li {
 }
 
 .logo_navbar {
-  border: none;
   width: 80px;
   height: 80px;
 }
@@ -134,8 +135,11 @@ img {
   height: 150px;
 }
 
-.div_redes a {
+.footer_redes .div_redes a {
   padding: 0 10px;
+}
+a .footer_redes .div_redes :hover .footer_redes .div_redes :active {
+  color: black;
 }
 
 .fa-brands {
@@ -156,18 +160,25 @@ img {
 #section_recomendacion .recomendaciones .caja img {
   transition: 0.5s;
 }
-#section_recomendacion .recomendaciones .caja:hover {
+#section_recomendacion .recomendaciones :hover {
   transition: 0.5s;
 }
-#section_recomendacion .recomendaciones .caja:hover img {
-  transition: 0.5s;
-}
-
-.btn-primary, .btn-success, .btn-warning, .btn-secondary, .btn-danger {
+#section_recomendacion .recomendaciones :hover img {
   transition: 0.5s;
 }
 
-.btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-secondary:hover, .btn-danger:hover {
+.card .card-body .figure-card figcaption div .btn {
+  transition: 0.5s;
+}
+.card .card-body .figure-card figcaption div :hover {
+  transition: 0.5s;
+  transform: scale(1.2, 1.2);
+}
+
+.modal .modal-dialog .modal-content .modal-footer .btn {
+  transition: 0.5s;
+}
+.modal .modal-dialog .modal-content .modal-footer :hover {
   transition: 0.5s;
   transform: scale(1.2, 1.2);
 }
@@ -197,10 +208,10 @@ img {
     transform: scale(1);
   }
 }
-.footer_redes a {
+.footer_redes .div_redes a {
   transition: text-shadow 1s;
 }
-.footer_redes a:hover {
+.footer_redes .div_redes :hover {
   text-shadow: 0 0 15px currentColor;
   transition: text-shadow 0.2s;
 }

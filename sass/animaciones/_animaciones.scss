@@ -7,7 +7,7 @@
                 transition: .5s;
             }
         }
-        .caja:hover {
+        & :hover {
             transition: .5s;
             img {
                 transition: .5s;
@@ -16,12 +16,37 @@
     }
 }
 // main productos
-.btn-primary, .btn-success, .btn-warning, .btn-secondary, .btn-danger {
-    transition: .5s;
+.card {
+    .card-body {
+        .figure-card {
+            figcaption {
+                div {
+                    .btn {
+                        transition: .5s;
+                    }
+                    & :hover {
+                        transition: .5s;
+                        transform: scale(1.2, 1.2);
+                    }
+                }
+            }
+        }
+    }
 }
-.btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-secondary:hover, .btn-danger:hover {
-    transition: .5s;
-    transform: scale(1.2, 1.2);
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-footer {
+                .btn {
+                    transition: .5s;
+                }
+                & :hover {
+                    transition: .5s;
+                    transform: scale(1.2, 1.2);
+                }
+            }
+        }
+    }
 }
 .almacen_criollo_card {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -49,11 +74,13 @@
 }
 // footer
 .footer_redes {
-    a {
-        transition: text-shadow 1s;
+    .div_redes {
+        a {
+            transition: text-shadow 1s;
+        }
+        & :hover {
+            text-shadow: 0 0 15px currentColor;
+            transition: text-shadow .2s;
+        }
     }
-    a:hover {
-        text-shadow: 0 0 15px currentColor;
-        transition: text-shadow .2s;
-    }
-} 
+}
