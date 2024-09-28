@@ -19,3 +19,9 @@
     //     display: none;
     // }
 }
+// desde bootstrap
+@media (min-width: 991.5px) {
+    .d-lg-block {
+        display: flex !important; // cambie block por flex
+    }
+}

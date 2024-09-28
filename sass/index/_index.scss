@@ -3,19 +3,15 @@
     margin: 110px 0 auto 0;
     min-height: 100vh;
 }
-#section_presentacion {
-    padding: 0 100px;
-}
 .img_presentacion {
     width: 100%;
     height: auto;
 }
-.p_presentacion {
-    text-align: left;
-}
-.p_recomendacion {
-    font-size: 15px;
-    text-align: center;
+#section_presentacion {
+    padding: 0px 100px;
+    .p_presentacion {
+        text-align: center;
+    }
 }
 #section_recomendacion {
     width: 100%;
@@ -25,6 +21,10 @@
     align-items: center;
     flex-direction: column;
     padding: 50px 50px 100px 50px;
+    .p_recomendacion {
+        font-size: 15px;
+        text-align: center;
+    }
     .recomendaciones {
         display: flex;
         gap: 20px;
@@ -34,6 +34,7 @@
             img {
                 height: 120px;
                 width: 120px;
+                border: 2px solid rgb(0, 0, 0);
             }
         }
         .caja:hover {
@@ -45,32 +46,35 @@
             }
         }
     }
-    // display: flex;
 }
 // QUIERO hacer que la animacion de las recomendaciones se quite cuando la pantalla este por debajo de los px del breakpoint, ocultando
-// el animado y mostrando este nuevo sin animaciones
-// #section_recomendacion_no_animacion {
-//     width: 100%;
-//     display: flex;
-//     gap: 20px;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     padding: 0 50px 100px 50px;
-//     .recomendaciones {
-//         display: flex;
-//         gap: 20px;
-//         .caja {
-//             height: 120px;
-//             width: 120px;
-//             img {
-//                 height: 120px;
-//                 width: 120px;
-//             }
-//         }
-//     }
-//     display: none;
-// }
+// el animado y mostrando este nuevo sin animaciones (REALIZADO CON BOOTSTRAP)
+#section_recomendacion_no_animacion {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 50px 100px 50px;
+    .p_recomendacion {
+        font-size: 15px;
+        text-align: center;
+    }
+    .recomendaciones {
+        display: flex;
+        gap: 20px;
+        .caja {
+            height: 120px;
+            width: 120px;
+            img {
+                height: 120px;
+                width: 120px;
+                border: 2px solid rgb(0, 0, 0);
+            }
+        }
+    }
+}
 .aside_publicidad p {
     font-size: 10px;
     text-align: center;

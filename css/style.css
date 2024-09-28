@@ -39,6 +39,11 @@ ul, li {
     padding: 20px 0;
   }
 }
+@media (min-width: 991.5px) {
+  .d-lg-block {
+    display: flex !important;
+  }
+}
 #header {
   width: 100%;
   background-color: grey;
@@ -206,21 +211,15 @@ img {
   min-height: 100vh;
 }
 
-#section_presentacion {
-  padding: 0 100px;
-}
-
 .img_presentacion {
   width: 100%;
   height: auto;
 }
 
-.p_presentacion {
-  text-align: left;
+#section_presentacion {
+  padding: 0px 100px;
 }
-
-.p_recomendacion {
-  font-size: 15px;
+#section_presentacion .p_presentacion {
   text-align: center;
 }
 
@@ -233,6 +232,10 @@ img {
   flex-direction: column;
   padding: 50px 50px 100px 50px;
 }
+#section_recomendacion .p_recomendacion {
+  font-size: 15px;
+  text-align: center;
+}
 #section_recomendacion .recomendaciones {
   display: flex;
   gap: 20px;
@@ -244,6 +247,7 @@ img {
 #section_recomendacion .recomendaciones .caja img {
   height: 120px;
   width: 120px;
+  border: 2px solid rgb(0, 0, 0);
 }
 #section_recomendacion .recomendaciones .caja:hover {
   width: 200px;
@@ -252,6 +256,33 @@ img {
 #section_recomendacion .recomendaciones .caja:hover img {
   height: 200px;
   width: 200px;
+}
+
+#section_recomendacion_no_animacion {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 50px 100px 50px;
+}
+#section_recomendacion_no_animacion .p_recomendacion {
+  font-size: 15px;
+  text-align: center;
+}
+#section_recomendacion_no_animacion .recomendaciones {
+  display: flex;
+  gap: 20px;
+}
+#section_recomendacion_no_animacion .recomendaciones .caja {
+  height: 120px;
+  width: 120px;
+}
+#section_recomendacion_no_animacion .recomendaciones .caja img {
+  height: 120px;
+  width: 120px;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .aside_publicidad p {
