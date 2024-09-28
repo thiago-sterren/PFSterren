@@ -276,12 +276,12 @@ img {
   gap: 20px;
 }
 #section_recomendacion_no_animacion .recomendaciones .caja {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
 }
 #section_recomendacion_no_animacion .recomendaciones .caja img {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   border: 2px solid rgb(0, 0, 0);
 }
 
