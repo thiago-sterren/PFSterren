@@ -158,22 +158,13 @@ img {
   transition: 0.5s;
 }
 
-.btn-primary, .btn-success, .btn-warning, .btn-secondary {
+.btn-primary, .btn-success, .btn-warning, .btn-secondary, .btn-danger {
   transition: 0.5s;
 }
 
-.btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-secondary:hover {
+.btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-secondary:hover, .btn-danger:hover {
   transition: 0.5s;
   transform: scale(1.2, 1.2);
-}
-
-.btn-danger {
-  transition: 1s;
-}
-
-.btn-danger:hover {
-  transition: 1s;
-  transform: rotate(360deg);
 }
 
 .almacen_criollo_card {
