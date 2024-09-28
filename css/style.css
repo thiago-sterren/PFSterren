@@ -247,15 +247,16 @@ img {
 #section_recomendacion .recomendaciones .caja img {
   height: 120px;
   width: 120px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(125, 118, 118);
+  border-radius: 20px;
 }
 #section_recomendacion .recomendaciones .caja:hover {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 }
 #section_recomendacion .recomendaciones .caja:hover img {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
 }
 
 #section_recomendacion_no_animacion {
@@ -276,13 +277,14 @@ img {
   gap: 20px;
 }
 #section_recomendacion_no_animacion .recomendaciones .caja {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 #section_recomendacion_no_animacion .recomendaciones .caja img {
-  height: 80px;
-  width: 80px;
-  border: 2px solid rgb(0, 0, 0);
+  height: 100px;
+  width: 100px;
+  border: 2px solid rgb(125, 118, 118);
+  border-radius: 20px;
 }
 
 .aside_publicidad p {
