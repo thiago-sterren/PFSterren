@@ -72,6 +72,18 @@
         transform: scale(1);
     }
 }
+// consultas
+#formConsultas {
+    .div_btn {
+        .btn {
+            transition: .5s;
+        }
+        & :hover {
+            transition: .5s;
+            transform: scale(1.2, 1.2);
+        }
+    }
+}
 // footer
 .footer_redes {
     .div_redes {

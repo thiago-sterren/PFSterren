@@ -212,6 +212,14 @@ img {
     transform: scale(1);
   }
 }
+#formConsultas .div_btn .btn {
+  transition: 0.5s;
+}
+#formConsultas .div_btn :hover {
+  transition: 0.5s;
+  transform: scale(1.2, 1.2);
+}
+
 .footer_redes .div_redes a {
   transition: text-shadow 1s;
 }
@@ -321,15 +329,20 @@ img {
   justify-content: space-around;
 }
 
+#formConsultas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 #formConsultas ul {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 10px;
   align-items: center;
-}
-
-#formConsultas ul li {
-  padding: 8px;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
