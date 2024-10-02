@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-style: none;
     text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350 !important;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 ul, li {
