@@ -1,31 +1,25 @@
 #main {
     max-width: 100%;
-    /*margin (para establecer los margenes de cada direccion): arriba - derecha - abajo - izquierda */
-    /*margin mas simplificado: arriba y abajo - derecha e izquierda*/
     margin: 150px 0 auto 0;
-    min-height: 100vh; /*vh = viewport height. se encarga de que el main ocupe toda la pantalla visible, a menos que se interpongan header o footer. esto hace, por ejemplo, que el footer quede siempre pegado al final de la pagina, y que no suba ante una posible falta/escasez de contenido en el main, dejando un espacio blanco por debajo del mismo que no queremos*/
-}
-
-.titulo {
-    text-align: center;
-    margin: 30px;
-}
-
-h2 {
-    font-size: 20px;
-    text-align: center;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-.row {
-    padding-top: calc(var(--bs-gutter-x)* .5);
-    padding-bottom: calc(var(--bs-gutter-x)* .5);
-}
-
-.almacen_criollo_card {
-    padding: 20px;
+    min-height: 100vh;
+    .titulo {
+        text-align: center;
+        margin: 30px;
+    }
+    .row {
+        padding-top: calc(var(--bs-gutter-x)* .5);
+        padding-bottom: calc(var(--bs-gutter-x)* .5);
+        .almacen_criollo_card {
+            padding: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            figcaption {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
 }

@@ -17,23 +17,15 @@
   font-variation-settings: "wdth" 100;
 }
 
-ul, li {
-  display: inline-block;
-}
-
-a, a:hover, a:active {
-  color: black;
-}
-
 #body {
   max-width: 1920px;
   height: 100vh;
 }
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
+#body li {
+  display: inline-block;
+}
+#body a, #body :hover, #body :active {
+  color: black;
 }
 
 @media screen and (max-width: 991.5px) {
@@ -60,73 +52,54 @@ button {
   padding: 10px;
   top: 0;
 }
-
-#navbar {
-  width: 100%;
-  height: 100%;
-}
-
-.navBar_almacen_criollo {
-  width: 100%;
-  height: 100%;
-}
-
-.logo_navbar {
+#header .navBar_almacen_criollo .logo_navbar {
+  background: none;
+  border: none;
+  cursor: pointer;
   width: 80px;
   height: 80px;
-}
-
-.navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
 }
-
-.ac_header_logo {
-  width: 80px;
-  height: 80px;
+#header .navBar_almacen_criollo .logo_navbar .ac_header_logo {
+  width: 100%;
+  height: 100%;
 }
-
-.nav-item {
-  padding: 0px 10px;
-}
-
-#navbarTogglerDemo02 {
+#header .navBar_almacen_criollo #navbarTogglerDemo02 {
   justify-content: center;
 }
-#navbarTogglerDemo02 ul .nav-link {
+#header .navBar_almacen_criollo #navbarTogglerDemo02 .navbar-nav .nav-item {
+  padding: 0px 10px;
+}
+#header .navBar_almacen_criollo #navbarTogglerDemo02 .navbar-nav .nav-item .nav-link {
+  color: rgb(240, 240, 240);
   font-size: 25px;
 }
 
 #main {
   max-width: 100%;
-  /*margin (para establecer los margenes de cada direccion): arriba - derecha - abajo - izquierda */
-  /*margin mas simplificado: arriba y abajo - derecha e izquierda*/
   margin: 150px 0 auto 0;
-  min-height: 100vh; /*vh = viewport height. se encarga de que el main ocupe toda la pantalla visible, a menos que se interpongan header o footer. esto hace, por ejemplo, que el footer quede siempre pegado al final de la pagina, y que no suba ante una posible falta/escasez de contenido en el main, dejando un espacio blanco por debajo del mismo que no queremos*/
+  min-height: 100vh;
 }
-
-.titulo {
+#main .titulo {
   text-align: center;
   margin: 30px;
 }
-
-h2 {
-  font-size: 20px;
-  text-align: center;
-}
-
-img {
-  width: 100px;
-  height: 100px;
-}
-
-.row {
+#main .row {
   padding-top: calc(var(--bs-gutter-x) * 0.5);
   padding-bottom: calc(var(--bs-gutter-x) * 0.5);
 }
-
-.almacen_criollo_card {
+#main .row .almacen_criollo_card {
   padding: 20px;
+}
+#main .row .almacen_criollo_card img {
+  width: 100%;
+  height: 100%;
+}
+#main .row .almacen_criollo_card figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #footer {
@@ -136,54 +109,34 @@ img {
   background-color: grey;
   padding: 30px; /*ayudado del 100vh puesto en el min-height del main, poniendole un padding suficiente, el footer no se movera del final de la pagina*/
 }
-
-.footer_logo_div img {
+#footer .footer_logo_div img {
   width: 150px;
   height: 150px;
 }
-
-.footer_redes .div_redes a {
-  padding: 0 10px;
+#footer .footer_copyright p {
+  text-align: center;
 }
-
-.fa-brands {
+#footer .footer_redes .div_redes a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+#footer .footer_redes .div_redes a .fa-brands {
   font-size: 30px;
 }
 
-.footer_redes a {
-  text-decoration: none;
-}
-
-.footer_copyright p {
-  text-align: center;
-}
-
-#section_recomendacion .recomendaciones .caja {
+#section_recomendacion .recomendaciones .caja, #section_recomendacion .recomendaciones :hover {
   transition: 0.5s;
 }
-#section_recomendacion .recomendaciones .caja img {
-  transition: 0.5s;
-}
-#section_recomendacion .recomendaciones :hover {
-  transition: 0.5s;
-}
-#section_recomendacion .recomendaciones :hover img {
+#section_recomendacion .recomendaciones .caja img, #section_recomendacion .recomendaciones :hover img {
   transition: 0.5s;
 }
 
-.card .card-body .figure-card figcaption div .btn {
+.btn, :hover {
   transition: 0.5s;
-}
-.card .card-body .figure-card figcaption div :hover {
-  transition: 0.5s;
-  transform: scale(1.2, 1.2);
 }
 
-.modal .modal-dialog .modal-content .modal-footer .btn {
-  transition: 0.5s;
-}
-.modal .modal-dialog .modal-content .modal-footer :hover {
-  transition: 0.5s;
+.btn:hover {
   transform: scale(1.2, 1.2);
 }
 
@@ -212,14 +165,6 @@ img {
     transform: scale(1);
   }
 }
-#formConsultas .div_btn .btn {
-  transition: 0.5s;
-}
-#formConsultas .div_btn :hover {
-  transition: 0.5s;
-  transform: scale(1.2, 1.2);
-}
-
 .footer_redes .div_redes a {
   transition: text-shadow 1s;
 }
@@ -233,20 +178,26 @@ img {
   margin: 110px 0 auto 0;
   min-height: 100vh;
 }
-
-.img_presentacion {
+#mainIndex button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#mainIndex .img_presentacion {
   width: 100%;
   height: auto;
 }
-
-#section_presentacion {
+#mainIndex #section_presentacion {
   padding: 0px 100px;
 }
-#section_presentacion .p_presentacion {
+#mainIndex #section_presentacion .titulo {
+  text-align: center;
+  margin: 30px;
+}
+#mainIndex #section_presentacion .p_presentacion {
   text-align: center;
 }
-
-#section_recomendacion {
+#mainIndex #section_recomendacion, #mainIndex #section_recomendacion_no_animacion {
   width: 100%;
   display: flex;
   gap: 10px;
@@ -255,78 +206,38 @@ img {
   flex-direction: column;
   padding: 50px 50px 100px 50px;
 }
-#section_recomendacion .p_recomendacion {
+#mainIndex #section_recomendacion h2, #mainIndex #section_recomendacion_no_animacion h2 {
+  font-size: 20px;
+  text-align: center;
+}
+#mainIndex #section_recomendacion .p_recomendacion, #mainIndex #section_recomendacion_no_animacion .p_recomendacion {
   font-size: 15px;
   text-align: center;
 }
-#section_recomendacion .recomendaciones {
+#mainIndex #section_recomendacion .recomendaciones, #mainIndex #section_recomendacion_no_animacion .recomendaciones {
   display: flex;
   gap: 20px;
 }
-#section_recomendacion .recomendaciones .caja {
+#mainIndex #section_recomendacion .recomendaciones .caja, #mainIndex #section_recomendacion_no_animacion .recomendaciones .caja {
   height: 120px;
   width: 120px;
 }
-#section_recomendacion .recomendaciones .caja img {
-  height: 120px;
-  width: 120px;
-  border: 2px solid rgb(125, 118, 118);
-  border-radius: 20px;
-}
-#section_recomendacion .recomendaciones .caja:hover {
-  width: 180px;
-  height: 180px;
-}
-#section_recomendacion .recomendaciones .caja:hover img {
-  height: 180px;
-  width: 180px;
-}
-
-#section_recomendacion_no_animacion {
+#mainIndex #section_recomendacion .recomendaciones .caja img, #mainIndex #section_recomendacion_no_animacion .recomendaciones .caja img {
+  height: 100%;
   width: 100%;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px 50px 100px 50px;
-}
-#section_recomendacion_no_animacion .p_recomendacion {
-  font-size: 15px;
-  text-align: center;
-}
-#section_recomendacion_no_animacion .recomendaciones {
-  display: flex;
-  gap: 20px;
-}
-#section_recomendacion_no_animacion .recomendaciones .caja {
-  height: 100px;
-  width: 100px;
-}
-#section_recomendacion_no_animacion .recomendaciones .caja img {
-  height: 100px;
-  width: 100px;
   border: 2px solid rgb(125, 118, 118);
   border-radius: 20px;
 }
-
-.aside_publicidad p {
-  font-size: 10px;
-  text-align: center;
+#mainIndex #section_recomendacion .caja:hover {
+  width: 180px;
+  height: 180px;
 }
-
-.aside_publicidad {
+#mainIndex .aside_publicidad {
   padding: 50px;
 }
-
-.almacen_criollo_card img {
-  width: 100%;
-  height: 100%;
-}
-.almacen_criollo_card figcaption {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+#mainIndex .aside_publicidad p {
+  font-size: 10px;
+  text-align: center;
 }
 
 #formConsultas {

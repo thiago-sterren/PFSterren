@@ -10,22 +10,14 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
-
-ul, li {
-    display: inline-block;
-}
-
-a, a:hover, a:active {
-    color: black;
-}
-
 #body {
     max-width: 1920px;
     height: 100vh;
+    li {
+        display: inline-block;
+    }
+    a, :hover, :active {
+        color: black;
+    }
 }
 
-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}

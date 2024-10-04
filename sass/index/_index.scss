@@ -2,85 +2,67 @@
     max-width: 100%;
     margin: 110px 0 auto 0;
     min-height: 100vh;
-}
-.img_presentacion {
-    width: 100%;
-    height: auto;
-}
-#section_presentacion {
-    padding: 0px 100px;
-    .p_presentacion {
-        text-align: center;
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
     }
-}
-#section_recomendacion {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 50px 100px 50px;
-    .p_recomendacion {
-        font-size: 15px;
-        text-align: center;
+    .img_presentacion {
+        width: 100%;
+        height: auto;
     }
-    .recomendaciones {
+    #section_presentacion {
+        padding: 0px 100px;
+        .titulo {
+            text-align: center;
+            margin: 30px;
+        }
+        .p_presentacion {
+            text-align: center;
+        }
+    }
+    #section_recomendacion, #section_recomendacion_no_animacion {
+        width: 100%;
         display: flex;
-        gap: 20px;
-        .caja {
-            height: 120px;
-            width: 120px;
-            img {
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 50px 100px 50px;
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .p_recomendacion {
+            font-size: 15px;
+            text-align: center;
+        }
+        .recomendaciones {
+            display: flex;
+            gap: 20px;
+            .caja {
                 height: 120px;
                 width: 120px;
-                border: 2px solid rgb(125, 118, 118);
-                border-radius: 20px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border: 2px solid rgb(125, 118, 118);
+                    border-radius: 20px;
+                }
             }
         }
+    }
+    #section_recomendacion {
         .caja:hover {
             width: 180px;
             height: 180px;
-            img {
-                height: 180px;
-                width: 180px;
-            }
         }
     }
-}
-// QUIERO hacer que la animacion de las recomendaciones se quite cuando la pantalla este por debajo de los px del breakpoint, ocultando
-// el animado y mostrando este nuevo sin animaciones (REALIZADO CON BOOTSTRAP)
-#section_recomendacion_no_animacion {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 50px 100px 50px;
-    .p_recomendacion {
-        font-size: 15px;
-        text-align: center;
-    }
-    .recomendaciones {
-        display: flex;
-        gap: 20px;
-        .caja {
-            height: 100px;
-            width: 100px;
-            img {
-                height: 100px;
-                width: 100px;
-                border: 2px solid rgb(125, 118, 118);
-                border-radius: 20px;
-            }
+    .aside_publicidad {
+        padding: 50px;
+        p {
+            font-size: 10px;
+            text-align: center;
         }
     }
-}
-.aside_publicidad p {
-    font-size: 10px;
-    text-align: center;
-}
-.aside_publicidad {
-    padding: 50px;
 }

@@ -1,53 +1,23 @@
+$transition-half-second: .5s;
 // recomendaciones index
 #section_recomendacion {
     .recomendaciones {
-        .caja {
-            transition: .5s;
+        .caja, :hover {
+            transition: $transition-half-second;
             img {
-                transition: .5s;
-            }
-        }
-        & :hover {
-            transition: .5s;
-            img {
-                transition: .5s;
+                transition: $transition-half-second;
             }
         }
     }
 }
-// main productos
-.card {
-    .card-body {
-        .figure-card {
-            figcaption {
-                div {
-                    .btn {
-                        transition: .5s;
-                    }
-                    & :hover {
-                        transition: .5s;
-                        transform: scale(1.2, 1.2);
-                    }
-                }
-            }
-        }
-    }
+// botones btn de bootstrap
+.btn, :hover {
+    transition: $transition-half-second;
 }
-.modal {
-    .modal-dialog {
-        .modal-content {
-            .modal-footer {
-                .btn {
-                    transition: .5s;
-                }
-                & :hover {
-                    transition: .5s;
-                    transform: scale(1.2, 1.2);
-                }
-            }
-        }
-    }
+.btn:hover {
+    transform: scale(1.2, 1.2);
 }
+// animaciones aparicion cards de productos
 .almacen_criollo_card {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -70,18 +40,6 @@
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
-    }
-}
-// consultas
-#formConsultas {
-    .div_btn {
-        .btn {
-            transition: .5s;
-        }
-        & :hover {
-            transition: .5s;
-            transform: scale(1.2, 1.2);
-        }
     }
 }
 // footer

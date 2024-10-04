@@ -4,34 +4,27 @@
     align-items: center;
     background-color: grey;
     padding: 30px; /*ayudado del 100vh puesto en el min-height del main, poniendole un padding suficiente, el footer no se movera del final de la pagina*/
-}
-
-.footer_logo_div {
-    img {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-
-.footer_redes {
-    .div_redes {
-        a {
-            padding: 0 10px;
+    .footer_logo_div {
+        img {
+            width: 150px;
+            height: 150px;
         }
     }
-}
-
-.fa-brands {
-    font-size: 30px;
-}
-
-.footer_redes a {
-    text-decoration: none;
-}
-
-.footer_copyright {
-    p {
-        text-align: center;
+    .footer_copyright {
+        p {
+            text-align: center;
+        }
+    }
+    .footer_redes {
+        .div_redes {
+            a {
+                padding: 0 10px;
+                text-decoration: none;
+                color: black;
+                .fa-brands {
+                    font-size: 30px;
+                }
+            }
+        }
     }
 }
