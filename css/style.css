@@ -216,7 +216,7 @@
 }
 #mainIndex #section_recomendacion .recomendaciones, #mainIndex #section_recomendacion_no_animacion .recomendaciones {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 #mainIndex #section_recomendacion .recomendaciones .caja, #mainIndex #section_recomendacion_no_animacion .recomendaciones .caja {
   height: 120px;
