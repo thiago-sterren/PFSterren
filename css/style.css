@@ -27,10 +27,6 @@
 #body a, #body :hover, #body :active {
   color: black;
 }
-#body img {
-  max-width: 100% !important;
-  height: auto !important;
-}
 
 @media screen and (max-width: 991.5px) {
   #footer {
