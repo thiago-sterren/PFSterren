@@ -19,5 +19,9 @@
     a, :hover, :active {
         color: black;
     }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
 }
 
