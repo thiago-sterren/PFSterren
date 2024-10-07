@@ -219,8 +219,8 @@
   gap: 10px;
 }
 #mainIndex #section_recomendacion .recomendaciones .caja, #mainIndex #section_recomendacion_no_animacion .recomendaciones .caja {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
 }
 #mainIndex #section_recomendacion .recomendaciones .caja img, #mainIndex #section_recomendacion_no_animacion .recomendaciones .caja img {
   height: 100%;
