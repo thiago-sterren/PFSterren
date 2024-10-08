@@ -41,8 +41,6 @@
             display: flex;
             gap: 10px;
             .caja {
-                height: 100px;
-                width: 100px;
                 img {
                     height: 100%;
                     width: 100%;
@@ -53,9 +51,23 @@
         }
     }
     #section_recomendacion {
-        .caja:hover {
-            width: 180px;
-            height: 180px;
+        .recomendaciones {
+            .caja {
+                height: 140px;
+                width: 140px;
+            }
+            .caja:hover {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    #section_recomendacion_no_animacion {
+        .recomendaciones {
+            .caja {
+                height: 100px;
+                width: 100px;
+            }
         }
     }
     .aside_publicidad {

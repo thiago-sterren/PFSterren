@@ -218,19 +218,23 @@
   display: flex;
   gap: 10px;
 }
-#mainIndex #section_recomendacion .recomendaciones .caja, #mainIndex #section_recomendacion_no_animacion .recomendaciones .caja {
-  height: 100px;
-  width: 100px;
-}
 #mainIndex #section_recomendacion .recomendaciones .caja img, #mainIndex #section_recomendacion_no_animacion .recomendaciones .caja img {
   height: 100%;
   width: 100%;
   border: 2px solid rgb(125, 118, 118);
   border-radius: 20px;
 }
-#mainIndex #section_recomendacion .caja:hover {
-  width: 180px;
-  height: 180px;
+#mainIndex #section_recomendacion .recomendaciones .caja {
+  height: 140px;
+  width: 140px;
+}
+#mainIndex #section_recomendacion .recomendaciones .caja:hover {
+  width: 200px;
+  height: 200px;
+}
+#mainIndex #section_recomendacion_no_animacion .recomendaciones .caja {
+  height: 100px;
+  width: 100px;
 }
 #mainIndex .aside_publicidad {
   padding: 50px;
