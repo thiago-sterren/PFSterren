@@ -236,13 +236,6 @@
   height: 100px;
   width: 100px;
 }
-#mainIndex .aside_publicidad {
-  padding: 50px;
-}
-#mainIndex .aside_publicidad p {
-  font-size: 10px;
-  text-align: center;
-}
 
 #formConsultas {
   display: flex;
